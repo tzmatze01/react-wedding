@@ -1,7 +1,10 @@
 {
+    "$schema": "./node_modules/wrangler/config-schema.json",
+    "name": "react-wedding",
     "main": "./src/main.tsx",
     "compatibility_date": "2027-01-01",
     "assets": {
-        "directory": "./dist"
+        "directory": "./dist",
+         "binding": "assets"
     }
 }
