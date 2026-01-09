@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 43, "column": 0}, "map": {"version":3,"sources":["file:///home/matze/Repositories/react-wedding/app/api/wedding/route.ts"],"sourcesContent":["export async function POST(request: Request) {\n  \n  const stuff = await request.json();\n\n  let message = \"Correct password!\"\n  console.log(\"amina succuk: \"+JSON.stringify(stuff, null, 2))\n    \n  const responseData = {\n    message: \"Hello from Next.js backend!\",\n    timestamp: new Date().toISOString(),\n    method: \"GET\"\n  };\n\n  // Return a JSON response with a 200 status code\n  return Response.json(responseData);\n}"],"names":[],"mappings":";;;;AAAO,eAAe,KAAK,OAAgB;IAEzC,MAAM,QAAQ,MAAM,QAAQ,IAAI;IAEhC,IAAI,UAAU;IACd,QAAQ,GAAG,CAAC,mBAAiB,KAAK,SAAS,CAAC,OAAO,MAAM;IAEzD,MAAM,eAAe;QACnB,SAAS;QACT,WAAW,IAAI,OAAO,WAAW;QACjC,QAAQ;IACV;IAEA,gDAAgD;IAChD,OAAO,SAAS,IAAI,CAAC;AACvB","debugId":null}}]
+}
