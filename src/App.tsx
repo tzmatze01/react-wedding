@@ -1,7 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import cloudflareLogo from './assets/Cloudflare_Logo.svg'
 import './App.css'
 
 function App() {
@@ -11,27 +8,18 @@ function App() {
   return (
     <>
       <div>
-        <a href='https://vite.dev' target='_blank'>
-          <img src={viteLogo} className='logo' alt='Vite logo' />
-        </a>
-        <a href='https://react.dev' target='_blank'>
-          <img src={reactLogo} className='logo react' alt='React logo' />
-        </a>
-        <a href='https://workers.cloudflare.com/' target='_blank'>
-          <img src={cloudflareLogo} className='logo cloudflare' alt='Cloudflare logo' />
-        </a>
+
       </div>
-      <h1>Vite + React + Cloudflare</h1>
+      <h1>Lucias Super Awesome Website</h1>
       <div className='card'>
+        <h3>Number of times i came during the last time</h3>
         <button
           onClick={() => setCount((count) => count + 1)}
           aria-label='increment'
         >
           count is {count}
         </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+        
       </div>
       <div className='card'>
         <button
