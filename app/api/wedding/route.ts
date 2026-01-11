@@ -1,25 +1,26 @@
-import { Env } from "@next/env";
+type LoginBody = {
+  password: string;
+};
 
-export async function POST(request: Request, env: Env) {
+export async function POST(request: Request) {
+  const password = process.env.INVITE_PASSWORD;
+  const stuff: LoginBody = await request.json();
 
+  console.log("stuff: " + stuff["password"]);
 
-  const password= env.INVITE_PASSWORD;
-  
-  const stuff = await request.json();
-
-  let message = "Nope!"
-  if(env.INVITE_PASSWORD === stuff) {
-    message = "Correct password!"
+  let message = "Nope!";
+  if (process.env.INVITE_PASSWORD === stuff["password"]) {
+    message = "Correct password!";
   }
 
-  console.log("amina password: "+password)
-  console.log("secret: "+env.INVITE_PASSWORD)
+  console.log("amina password: " + password);
+  console.log("secret: " + process.env.INVITE_PASSWORD);
   // console.log("amina succuk: "+JSON.stringify(stuff, null, 2))
-    
+
   const responseData = {
     message: message,
     timestamp: new Date().toISOString(),
-    method: "POST"
+    method: "POST",
   };
 
   return Response.json(responseData);

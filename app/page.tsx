@@ -23,13 +23,15 @@ export default function Home() {
         }),
       });
 
-      console.log("resposne: " + JSON.stringify(response, null, 2));
+
+      const data = await response.json();
+
+      console.log("resposne : " + JSON.stringify(data, null, 2));
 
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
 
-      const data = await response.json();
     } catch (err) {
       console.error("Error fetching tasks:", err);
     } finally {

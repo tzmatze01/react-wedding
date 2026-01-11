@@ -45,15 +45,16 @@ __turbopack_context__.s([
     "POST",
     ()=>POST
 ]);
-async function POST(request, env) {
-    const password = env.INVITE_PASSWORD;
+async function POST(request) {
+    const password = process.env.INVITE_PASSWORD;
     const stuff = await request.json();
+    console.log("stuff: " + stuff["password"]);
     let message = "Nope!";
-    if (env.INVITE_PASSWORD === stuff) {
+    if (process.env.INVITE_PASSWORD === stuff["password"]) {
         message = "Correct password!";
     }
     console.log("amina password: " + password);
-    console.log("secret: " + env.INVITE_PASSWORD);
+    console.log("secret: " + process.env.INVITE_PASSWORD);
     // console.log("amina succuk: "+JSON.stringify(stuff, null, 2))
     const responseData = {
         message: message,
