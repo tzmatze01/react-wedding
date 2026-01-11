@@ -1,5 +1,6 @@
+import { Env } from "@next/env";
 
-export async function POST(request: Request, env: any) {
+export async function POST(request: Request, env: Env) {
 
 
   const password= env.INVITE_PASSWORD;
