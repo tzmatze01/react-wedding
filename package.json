@@ -14,11 +14,13 @@
 	},
 	"dependencies": {
 		"@opennextjs/cloudflare": "^1.14.4",
+		"cloudflare": "^5.2.0",
 		"next": "15.5.9",
 		"react": "19.1.4",
 		"react-dom": "19.1.4"
 	},
 	"devDependencies": {
+		"@cloudflare/workers-types": "^4.20260109.0",
 		"@eslint/eslintrc": "^3",
 		"@tailwindcss/postcss": "^4",
 		"@types/node": "^20.19.27",

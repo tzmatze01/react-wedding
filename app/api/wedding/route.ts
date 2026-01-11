@@ -1,22 +1,25 @@
-import { env } from "cloudflare:workers";
 
-
-export async function POST(request: Request) {
+export async function POST(request: Request, env: any) {
 
 
   const password= env.INVITE_PASSWORD;
   
   const stuff = await request.json();
 
-  let message = "Correct password!"
-  console.log("amina succuk: "+JSON.stringify(stuff, null, 2))
+  let message = "Nope!"
+  if(env.INVITE_PASSWORD === stuff) {
+    message = "Correct password!"
+  }
+
+  console.log("amina password: "+password)
+  console.log("secret: "+env.INVITE_PASSWORD)
+  // console.log("amina succuk: "+JSON.stringify(stuff, null, 2))
     
   const responseData = {
-    message: "Hello from Next.js backend!",
+    message: message,
     timestamp: new Date().toISOString(),
-    method: "GET"
+    method: "POST"
   };
 
-  // Return a JSON response with a 200 status code
   return Response.json(responseData);
 }

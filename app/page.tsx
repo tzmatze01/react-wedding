@@ -19,7 +19,7 @@ export default function Home() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          password: "testooo123",
+          password: "TEST123",
         }),
       });
 
