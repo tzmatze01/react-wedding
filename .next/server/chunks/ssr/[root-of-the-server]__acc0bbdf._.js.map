@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 11, "column": 0}, "map": {"version":3,"sources":["file:///home/matze/Repositories/react-wedding/app/overview/page.tsx"],"sourcesContent":["export default function Home() {\n  return (\n    <div className=\"font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20\">\n      <main className=\"flex flex-col gap-[32px] row-start-2 items-center sm:items-senter\">\n        Overview Behind Login\n      </main>\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;;;AAAe,SAAS;IACtB,qBACE,8OAAC;QAAI,WAAU;kBACb,cAAA,8OAAC;YAAK,WAAU;sBAAoE;;;;;;;;;;;AAK1F","debugId":null}}]
+}
