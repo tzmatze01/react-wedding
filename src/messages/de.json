@@ -1,0 +1,12 @@
+{
+  "Login": {
+    "hello": "Hallo"
+  },
+  "components": {
+    "localeSwitcher": {
+      "english": "Englisch",
+      "german": "Deutsch",
+      "spanis": "Spanisch"
+    }
+  }
+}

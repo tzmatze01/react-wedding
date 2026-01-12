@@ -1,5 +1,9 @@
 {
   "/_not-found/page": "/_not-found",
   "/api/wedding/route": "/api/wedding",
-  "/page": "/"
+  "/api/login/route": "/api/login",
+  "/[...not_found]/page": "/[...not_found]",
+  "/login/page": "/login",
+  "/overview/page": "/overview",
+  "/home/page": "/home"
 }

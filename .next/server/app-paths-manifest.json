@@ -1,9 +1,6 @@
 {
-  "/[...not_found]/page": "app/[...not_found]/page.js",
-  "/_not-found/page": "app/_not-found/page.js",
-  "/api/login/route": "app/api/login/route.js",
-  "/home/page": "app/home/page.js",
-  "/login/page": "app/login/page.js",
-  "/overview/page": "app/overview/page.js",
-  "/page": "app/page.js"
+  "/[locale]/[...not_found]/page": "app/[locale]/[...not_found]/page.js",
+  "/[locale]/login/page": "app/[locale]/login/page.js",
+  "/[locale]/page": "app/[locale]/page.js",
+  "/_not-found/page": "app/_not-found/page.js"
 }
