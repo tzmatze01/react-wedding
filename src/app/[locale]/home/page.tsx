@@ -1,9 +1,17 @@
+"use client"
+
+import dynamic from "next/dynamic";
+import { useMemo } from "react";
+
 export default function Home() {
+
+  const Map = dynamic(() => import("@/components/Map"), {
+    ssr: false,
+  })
+
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-senter">
-        Home Behind Login with all the secret information
-      </main>
+    <div>
+      <Map position={[-34.374077, -58.72908]} zoom={13} height={"40em"}/>
     </div>
   );
 }

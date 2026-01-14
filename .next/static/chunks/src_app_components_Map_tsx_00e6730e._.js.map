@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///home/matze/Repositories/react-wedding/src/app/components/Map.tsx"],"sourcesContent":["\"use client\"\n\nimport { MapContainer, Marker, Popup, TileLayer } from \"react-leaflet\"\nimport \"leaflet/dist/leaflet.css\"\n// import \"leaflet-defaulticon-compatibility\"\n// import \"leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css\"\n\nexport default function WeddingMap(props: any) {\n  const { position, zoom } = props\n\n  return <MapContainer center={position} zoom={zoom} scrollWheelZoom={false}>\n    <TileLayer\n      attribution='&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors'\n      url=\"https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png\"\n    />\n    <Marker position={position}>\n      <Popup>\n        A pretty CSS3 popup. <br /> Easily customizable.\n      </Popup>\n    </Marker>\n  </MapContainer>\n}"],"names":[],"mappings":";;;;;AAEA;AAAA;AAAA;AAAA;AAFA;;;;AAOe,SAAS,WAAW,KAAU;IAC3C,MAAM,EAAE,QAAQ,EAAE,IAAI,EAAE,GAAG;IAE3B,qBAAO,6LAAC,0KAAY;QAAC,QAAQ;QAAU,MAAM;QAAM,iBAAiB;;0BAClE,6LAAC,oKAAS;gBACR,aAAY;gBACZ,KAAI;;;;;;0BAEN,6LAAC,8JAAM;gBAAC,UAAU;0BAChB,cAAA,6LAAC,4JAAK;;wBAAC;sCACgB,6LAAC;;;;;wBAAK;;;;;;;;;;;;;;;;;;AAInC;KAdwB","debugId":null}}]
+}

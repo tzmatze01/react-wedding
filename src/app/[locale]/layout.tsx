@@ -42,7 +42,7 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <head>
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml"></link>
+        <link rel="icon" href="/emprezel.webp" type="image/svg+xml"></link>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

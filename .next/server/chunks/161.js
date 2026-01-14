@@ -1,0 +1,1 @@
+"use strict";exports.id=161,exports.ids=[161],exports.modules={161:a=>{a.exports=JSON.parse('{"Login":{"hello":"Hallo"},"components":{"localeSwitcher":{"english":"Englisch","german":"Deutsch","spanis":"Spanisch"}}}')}};

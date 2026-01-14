@@ -50,7 +50,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$opennextjs
 ;
 async function GET(request) {
     const { env } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$opennextjs$2f$cloudflare$2f$dist$2f$api$2f$cloudflare$2d$context$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["getCloudflareContext"])();
-    const { results } = await env.wedding_db.prepare("SELECT * FROM Customers").all();
+    const { results } = await env.wedding_db.prepare("SELECT * FROM Guest").all();
     console.log("results: " + JSON.stringify(results, null, 2));
     return Response.json(results);
 }

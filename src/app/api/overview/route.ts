@@ -4,7 +4,7 @@ export async function GET(request: Request) {
   const {env} = getCloudflareContext() 
 
   const { results } = await env.wedding_db
-    .prepare("SELECT * FROM Customers")
+    .prepare("SELECT * FROM Guest")
     .all()
 
     console.log("results: "+JSON.stringify(results, null, 2))
