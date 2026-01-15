@@ -565,8 +565,16 @@
     display: grid;
   }
 
+  .hidden {
+    display: none;
+  }
+
   .inline {
     display: inline;
+  }
+
+  .inline-block {
+    display: inline-block;
   }
 
   .table {
@@ -689,6 +697,8 @@
 :root {
   --background: #fff;
   --foreground: #171717;
+  --primary-blue: #51627b;
+  --primary-green: #54654e;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -698,10 +708,68 @@
   }
 }
 
+@font-face {
+  font-family: Alice;
+  src: url("/Alice-Regular.ttf");
+}
+
+@font-face {
+  font-family: Russkopis;
+  src: url("/russkopis-book-italic.ttf");
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Alice;
+}
+
+.card {
+  text-align: center;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, .1);
+  border-radius: 2rem;
+  width: 90vw;
+  height: 90vh;
+  margin-bottom: 4rem;
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .3);
+}
+
+.app {
+  color: #000;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  font-family: Russkopis;
+  display: flex;
+}
+
+.logo {
+  width: 20rem;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.counter {
+  font-size: 15rem;
+}
+
+.subheading {
+  font-size: 5rem;
+}
+
+.border {
+  border: none;
+  width: 25vw;
+  height: 25vw;
+  padding: 1rem;
+  position: fixed;
 }
 
 @property --tw-rotate-x {

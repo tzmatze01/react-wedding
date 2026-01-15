@@ -35,7 +35,7 @@ export default function WeddingMap(props: MapProps) {
       center={position}
       zoom={zoom}
       scrollWheelZoom={false}
-      style={{ height: height }}
+      style={{ height: height, width: '100%' }}
     >
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -43,7 +43,7 @@ export default function WeddingMap(props: MapProps) {
       />
       <Marker
         ref={(ref) => {
-          setTimeout(() => ref?.openPopup(), 500);
+          setTimeout(() => ref?.openPopup(), 300);
         }}
         position={position}
         icon={empanadaBrezel}

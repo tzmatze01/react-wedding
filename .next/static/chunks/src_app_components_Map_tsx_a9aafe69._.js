@@ -50,7 +50,8 @@ function WeddingMap(props) {
         zoom: zoom,
         scrollWheelZoom: false,
         style: {
-            height: height
+            height: height,
+            width: '100%'
         },
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$leaflet$2f$lib$2f$TileLayer$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TileLayer"], {
@@ -63,7 +64,7 @@ function WeddingMap(props) {
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$leaflet$2f$lib$2f$Marker$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Marker"], {
                 ref: (ref)=>{
-                    setTimeout(()=>ref === null || ref === void 0 ? void 0 : ref.openPopup(), 500);
+                    setTimeout(()=>ref === null || ref === void 0 ? void 0 : ref.openPopup(), 300);
                 },
                 position: position,
                 icon: empanadaBrezel,

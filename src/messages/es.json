@@ -2,6 +2,11 @@
   "Login": {
     "hello": "Hola"
   },
+  "Home": {
+    "welcome": "Bienvenidx",
+    "see_you": "Hasta en", 
+    "days": "dias"
+  },
   "components": {
     "localeSwitcher": {
       "english": "Ingles",
