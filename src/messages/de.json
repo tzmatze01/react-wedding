@@ -4,10 +4,17 @@
     "login": "Einloggen",
     "loading": "Laden..."
   },
-  "Home": {
+  "CountDown": {
     "welcome": "Willkomment",
     "see_you": "Bis in", 
     "days": "Tagen"
+  },
+  "Location": {
+    "when": "Wann", 
+    "date": "Samstag, 21 November 2026",
+    "where": "Wo",
+    "location": "Espacio Campus",
+    "city": "Buenos Aires, Argentinien"
   },
   "Dialog": {
     "open": "Anmelden",

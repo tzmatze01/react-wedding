@@ -35,7 +35,8 @@ export default function WeddingMap(props: MapProps) {
       center={position}
       zoom={zoom}
       scrollWheelZoom={false}
-      style={{ height: height, width: '100%' }}
+      className=""
+      style={{ height: '100%', width: '100%' }}
     >
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -49,9 +50,11 @@ export default function WeddingMap(props: MapProps) {
         icon={empanadaBrezel}
       >
         <Popup>
+          <a href="https://maps.app.goo.gl/sB5wKwY2zz1sWhqV8">
           RP26 900 <br />
           B1623 Ingeniero Maschwitz <br />
           Provincia de Buenos Aires, Argentinien
+          </a>
         </Popup>
       </Marker>
     </MapContainer>

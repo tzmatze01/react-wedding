@@ -59,7 +59,7 @@ export default function Home() {
         className="cardBorder"
       />
       <div className="flex flex-col flex-center items-center justify-center h-full">
-        <img src="/emprezel.webp" alt="Wedding Logo" className="logo lg:w-[18rem] sm:w-[12rem]" />
+        <img src="/emprezel.webp" alt="Wedding Logo" className="lg:w-[18rem] sm:w-[10rem]" />
 
         <SplitText
           key={words[index]}
