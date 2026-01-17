@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
+import LanguageSwitcher from "@/components/ui/LanguageSwitcher";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,9 +31,6 @@ export default async function RootLayout({
 }: LocaleLayoutProps) {
   const { locale } = await params;
   
-  console.log("locale1   : " + locale);
-
-    // Enable static generation
   setRequestLocale(locale);
 
   // Providing all messages to the client
@@ -48,7 +46,10 @@ export default async function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <NextIntlClientProvider messages={messages}>
-
+          <header>
+            <LanguageSwitcher/>
+              
+          </header>
           {children}
 
           <footer className="footer">

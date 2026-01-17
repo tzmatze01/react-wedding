@@ -36,25 +36,18 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$esm$2f$api$2f$server$2e$js__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/next/dist/esm/api/server.js [middleware-edge] (ecmascript) <locals>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$esm$2f$server$2f$web$2f$exports$2f$index$2e$js__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/esm/server/web/exports/index.js [middleware-edge] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$middleware$2f$middleware$2e$js__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next-intl/dist/esm/development/middleware/middleware.js [middleware-edge] (ecmascript)");
-// import { routing } from "./i18n/routing";
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2e$ts__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/config.ts [middleware-edge] (ecmascript)");
 ;
 ;
 ;
-/*
-
-export default createMiddleware({
-  locales,
-  defaultLocale:'en'
-});
-*/ const intlMiddleware = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$middleware$2f$middleware$2e$js__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__["default"])({
+const intlMiddleware = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$middleware$2f$middleware$2e$js__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__["default"])({
     locales: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2e$ts__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__["locales"],
-    defaultLocale: 'en'
+    defaultLocale: "en"
 });
 function middleware(request) {
     const intlResponse = intlMiddleware(request);
     const { pathname } = request.nextUrl;
-    if (intlResponse && intlResponse.headers.get('location')) {
+    if (intlResponse && intlResponse.headers.get("location")) {
         return intlResponse;
     }
     const protectedRoutes = [
@@ -62,11 +55,9 @@ function middleware(request) {
         "/overview"
     ];
     // Remove locale prefix (e.g. /en/home → /home)
-    const pathnameWithoutLocale = pathname.replace(/^\/(en|de|es)/, '');
-    console.log("next request: " + pathname);
+    const pathnameWithoutLocale = pathname.replace(/^\/(en|de|es)/, "");
     if (protectedRoutes.some((route)=>pathnameWithoutLocale.startsWith(route))) {
         const token = request.cookies.get("session")?.value;
-        console.log("token: " + token);
         if (!token) {
             const locale = request.nextUrl.locale;
             return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$esm$2f$server$2f$web$2f$exports$2f$index$2e$js__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__["NextResponse"].redirect(new URL(`/${locale}/login`, request.url));

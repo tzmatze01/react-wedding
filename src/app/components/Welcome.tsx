@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import SplitText from "@/components/SplitText";
+import SplitText from "@/components/ui/SplitText";
 
 export default function Home() {
   const texts = [
@@ -14,7 +14,6 @@ export default function Home() {
     const interval = setInterval(() => {
       setIndex((prevIndex) => {
         const nextIndex = (prevIndex + 1) % texts.length;
-        console.log("Next text will be: " + texts[nextIndex]);
         return nextIndex;
       });
     }, 2000);
@@ -28,21 +27,27 @@ export default function Home() {
         src="/border.webp"
         style={{
           transform: "scaleX(-1) rotate(90deg)",
+          top: 0,
+          left: 0,
         }}
-        className="border"
+        className="cardBorder"
       />
       <img
         src="/border.webp"
         style={{
           transform: "scaleY(-1) scaleX(-1) rotate(270deg)",
+          top: 0,
           right: 0,
         }}
-        className="border"
+        className="cardBorder"
       />
       <img
         src="/border.webp"
-        style={{ transform: "scaleY(1) rotate(270deg)", bottom: 0 }}
-        className="border"
+        style={{ transform: "scaleY(1) rotate(270deg)", 
+          left: 0,
+          bottom: 0 
+        }}
+        className="cardBorder"
       />
       <img
         src="/border.webp"
@@ -51,25 +56,26 @@ export default function Home() {
           bottom: 0,
           right: 0,
         }}
-        className="border"
+        className="cardBorder"
       />
+      <div className="flex flex-col flex-center items-center justify-center h-full">
+        <img src="/emprezel.webp" alt="Wedding Logo" className="logo" />
 
-      <img src="/emprezel.webp" alt="Wedding Logo" className="logo" />
-
-      <SplitText
-        key={words[index]}
-        text={words[index]}
-        className="subheading"
-        delay={100}
-        duration={0.6}
-        ease="power3.out"
-        splitType="chars"
-        from={{ opacity: 0, y: 40 }}
-        to={{ opacity: 1, y: 0 }}
-        threshold={0.1}
-        rootMargin="-100px"
-        textAlign="center"
-      />
+        <SplitText
+          key={words[index]}
+          text={words[index]}
+          className="subheading"
+          delay={100}
+          duration={0.6}
+          ease="power3.out"
+          splitType="chars"
+          from={{ opacity: 0, y: 40 }}
+          to={{ opacity: 1, y: 0 }}
+          threshold={0.1}
+          rootMargin="-100px"
+          textAlign="center"
+        />
+      </div>
     </div>
   );
 }

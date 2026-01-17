@@ -1,1 +1,1 @@
-"use strict";exports.id=789,exports.ids=[789],exports.modules={3789:a=>{a.exports=JSON.parse('{"Login":{"hello":"Hello"},"components":{"localeSwitcher":{"english":"English","german":"German","spanis":"Spanish"}}}')}};
+"use strict";exports.id=789,exports.ids=[789],exports.modules={3789:a=>{a.exports=JSON.parse('{"Login":{"hello":"Hello"},"Home":{"welcome":"Welcome","see_you":"See you in","days":"days"},"components":{"localeSwitcher":{"english":"English","german":"German","spanis":"Spanish"}}}')}};

@@ -4,9 +4,22 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { FormEvent, useState } from "react";
 import { useTranslations } from "use-intl/react";
+import { Button } from "@/components/ui/button";
+import {
+  Field,
+  FieldDescription,
+  FieldGroup,
+  FieldLabel,
+  FieldLegend,
+  FieldSeparator,
+  FieldSet,
+} from "@/components/ui/field";
+import { Input } from "@/components/ui/input";
+import { useLocale } from "next-intl";
 
 export default function Login() {
-  const router = useRouter()
+  const router = useRouter();
+  const locale = useLocale();
   const t = useTranslations("Login");
   const [isLoading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -31,9 +44,8 @@ export default function Login() {
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       } else {
-        router.push("/home")
+        router.push(`/${locale}/home`);
       }
-
     } catch (error) {
       console.error("Error fetching tasks:", error);
       // setError(error.message)
@@ -41,6 +53,7 @@ export default function Login() {
       setLoading(false);
     }
   }
+
   return (
     <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-senter">
@@ -51,21 +64,33 @@ export default function Login() {
           height={38}
           priority
         />
-        {t('hello')}
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
+        <div className="w-full max-w-md">
           {error && <div style={{ color: "red" }}>{error}</div>}
           <form onSubmit={onSubmit} className="flex flex-col gap-[32px]">
-            <div className="border-2 border-solid border-white rounded-lg">
-              <input type="password" name="password" />
-            </div>
-
-            <button
-              className="border-2 border-solid border-white rounded-lg"
-              type="submit"
-              disabled={isLoading}
-            >
-              {isLoading ? "Loading..." : "Login"}
-            </button>
+            <FieldGroup>
+              <FieldSet>
+                <FieldGroup className="text-black">
+                  <Field>
+                    <FieldLabel htmlFor="guest-name"></FieldLabel>
+                    <Input
+                      id="password"
+                      name="password"
+                      type="password"
+                      required
+                    />
+                  </Field>
+                  <Field>
+                    <Button
+                      variant="outline"
+                      type="submit"
+                      disabled={isLoading}
+                    >
+                      {isLoading ? t("loading") : t("login")}
+                    </Button>
+                  </Field>
+                </FieldGroup>
+              </FieldSet>
+            </FieldGroup>
           </form>
         </div>
       </main>

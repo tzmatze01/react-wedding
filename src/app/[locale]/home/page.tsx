@@ -1,19 +1,16 @@
 "use client";
 
-import CountUp from "@/components/CountUp";
-import GradientText from "@/components/GradientText";
+import ColorSwipe from "@/components/ColorSwipe";
+import RegisterDialog from "@/components/Dialog";
+import CountUp from "@/components/ui/CountUp";
+import GradientText from "@/components/ui/GradientText";
 import Welcome from "@/components/Welcome";
 import { useTranslations } from "next-intl";
 import dynamic from "next/dynamic";
-import localFont from "next/font/local";
-import { useEffect, useMemo, useRef, useState } from "react";
-import Image from "next/image";
-
-// const alice = localFont({ src: 'Pixeboy.ttf' })
+import { useMemo } from "react";
 
 export default function Home() {
   const t = useTranslations("Home");
-
 
   const Map = dynamic(() => import("@/components/Map"), {
     ssr: false,
@@ -35,9 +32,50 @@ export default function Home() {
 
   return (
     <div className="app">
-      
-      <Welcome/>
+      <ColorSwipe
+        right="-50vw"
+        top="-25vh"
+        image="/green.webp"
+        className="moveAnimationTop"
+      />
+      <ColorSwipe
+        right="-50vw"
+        top="-60vh"
+        delay="0.3s"
+        image="/green.webp"
+        className="moveAnimationTop"
+      />
+      <ColorSwipe
+        right="-70vw"
+        top="-20vh"
+        delay="0.6s"
+        image="/green.webp"
+        className="moveAnimationTop"
+      />
+      <ColorSwipe
+        left="-50vw"
+        bottom="-25vh"
+        image="/blue.webp"
+        className="moveAnimationBottom"
+      />
+      <ColorSwipe
+        left="-50vw"
+        bottom="-60vh"
+        delay="0.3s"
+        image="/blue.webp"
+        className="moveAnimationBottom"
+      />
+      <ColorSwipe
+        left="-70vw"
+        bottom="-20vh"
+        delay="0.6s"
+        image="/blue.webp"
+        className="moveAnimationBottom"
+      />
 
+      <Welcome />
+      <h1>Matze and Lucia</h1>
+      are getting married
       <div className="card">
         <Map position={[-34.374077, -58.72908]} zoom={13} height={"40em"}></Map>
       </div>
@@ -53,6 +91,7 @@ export default function Home() {
         </GradientText>
         <span style={{ fontSize: "5rem" }}>{t("days")}</span>
       </div>
+      <RegisterDialog />
     </div>
   );
 }

@@ -1,17 +1,28 @@
 {
   "Login": {
-    "hello": "Hola"
+    "hello": "Hallo",
+    "login": "Entrar",
+    "loading": "Algon con mas tiempo..."
   },
   "Home": {
     "welcome": "Bienvenidx",
     "see_you": "Hasta en", 
     "days": "dias"
   },
+   "Dialog": {
+    "open": "Registrar",
+    "description": "Bla",
+    "name": "Nombre",
+    "surname": "Apedillo",
+    "email": "Email",
+    "comment": "Tienes prgeuntas. allergias or otras notas?",
+    "cancel": "Cancelar"
+  },
   "components": {
     "localeSwitcher": {
       "english": "Ingles",
       "german": "Aleman",
-      "spanis": "Espanol"
+      "spanish": "Espanol"
     }
   }
 }

@@ -1,17 +1,28 @@
 {
   "Login": {
-    "hello": "Hallo"
+    "hello": "Hallo",
+    "login": "Einloggen",
+    "loading": "Laden..."
   },
   "Home": {
     "welcome": "Willkomment",
     "see_you": "Bis in", 
     "days": "Tagen"
   },
+  "Dialog": {
+    "open": "Anmelden",
+    "description": "Bla",
+    "name": "Name",
+    "surname": "Nachname",
+    "email": "Email",
+    "comment": "Hast du Fragen, Allergien oder sonstige Anmerkungen?",
+    "cancel": "Abbrechen"
+  },
   "components": {
     "localeSwitcher": {
       "english": "Englisch",
       "german": "Deutsch",
-      "spanis": "Spanisch"
+      "spanish": "Spanisch"
     }
   }
 }
