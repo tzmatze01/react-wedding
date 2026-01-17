@@ -22,7 +22,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="card">
+    <div className="card lg:w-[70vw] lg:h-[70vh] sm:w-[90vw] sm:h-[50vw]">
       <img
         src="/border.webp"
         style={{
@@ -59,12 +59,12 @@ export default function Home() {
         className="cardBorder"
       />
       <div className="flex flex-col flex-center items-center justify-center h-full">
-        <img src="/emprezel.webp" alt="Wedding Logo" className="logo" />
+        <img src="/emprezel.webp" alt="Wedding Logo" className="logo lg:w-[18rem] sm:w-[12rem]" />
 
         <SplitText
           key={words[index]}
           text={words[index]}
-          className="subheading"
+          className="lg:text-[5rem] sm:text-[3rem]"
           delay={100}
           duration={0.6}
           ease="power3.out"

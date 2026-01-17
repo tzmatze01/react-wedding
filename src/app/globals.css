@@ -53,8 +53,6 @@ body {
   border: 2rem solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
-  width: 70vw;
-  height: 70vh;
   box-sizing: border-box;
   padding: 2rem;
 }
@@ -70,7 +68,6 @@ body {
 }
 
 .logo {
-  width: 18rem;
   margin-bottom: 1rem;
   display: block;
   margin-left: auto;
@@ -79,10 +76,6 @@ body {
 
 .counter {
   font-size: 15rem;
-}
-
-.subheading {
-  font-size: 5rem;
 }
 
 .cardBorder {

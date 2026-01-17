@@ -53,33 +53,32 @@ export default function Home() {
         className="moveAnimationTop"
       />
       <ColorSwipe
-        left="-50vw"
-        bottom="-25vh"
+        left="-65vw"
+        top="50vh"
+        delay="0.6s"
         image="/blue.webp"
         className="moveAnimationBottom"
       />
       <ColorSwipe
-        left="-50vw"
-        bottom="-60vh"
+        left="-30vw"
+        top="20vh"
         delay="0.3s"
         image="/blue.webp"
         className="moveAnimationBottom"
       />
       <ColorSwipe
-        left="-70vw"
-        bottom="-20vh"
-        delay="0.6s"
+        left="-40vw"
+        top="70vh"
         image="/blue.webp"
         className="moveAnimationBottom"
       />
-
       <Welcome />
       <h1>Matze and Lucia</h1>
       are getting married
-      <div className="card">
+      <div className="card lg:w-[70vw] lg:h-[70vh] sm:w-[90vw] sm:h-[50vw]">
         <Map position={[-34.374077, -58.72908]} zoom={13} height={"40em"}></Map>
       </div>
-      <div className="card">
+      <div className="card lg:w-[70vw] lg:h-[70vh] sm:w-[90vw] sm:h-[50vw]">
         <span style={{ fontSize: "5rem" }}>{t("see_you")}</span>
         <GradientText
           colors={["#8aaf7c", "#51627b", "#54654e", "#7ea0d3", "#8aaf7c"]}
