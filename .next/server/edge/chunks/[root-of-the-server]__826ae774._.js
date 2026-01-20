@@ -58,9 +58,12 @@ function middleware(request) {
     const pathnameWithoutLocale = pathname.replace(/^\/(en|de|es)/, "");
     if (protectedRoutes.some((route)=>pathnameWithoutLocale.startsWith(route))) {
         const token = request.cookies.get("session")?.value;
+        console.log("token " + JSON.stringify(token, null, 2));
+        console.log("token decrypt" + JSON.stringify(decrypt(token), null, 2));
         if (!token) {
-            const locale = request.nextUrl.locale;
-            return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$esm$2f$server$2f$web$2f$exports$2f$index$2e$js__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__["NextResponse"].redirect(new URL(`/${locale}/login`, request.url));
+            const redirectRequest = request.nextUrl.clone();
+            redirectRequest.pathname = "/en/login";
+            return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$esm$2f$server$2f$web$2f$exports$2f$index$2e$js__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__["NextResponse"].redirect(redirectRequest);
         }
     // TODO: Optionally, verify token validity and user permissions
     }

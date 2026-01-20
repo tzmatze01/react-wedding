@@ -1,19 +1,13 @@
 "use client";
 
 import ColorSwipe from "@/components/ColorSwipe";
-import RegisterDialog from "@/components/Dialog";
 import Welcome from "@/components/Welcome";
 import Location from "@/components/Location";
-
 import CountDown from "@/components/CountDown";
+import Registration from "@/components/Registration";
 
-import { useTranslations } from "next-intl";
-import { useMemo } from "react";
 
 export default function Home() {
-
-
-
   return (
     <div className="app">
       <ColorSwipe
@@ -58,12 +52,13 @@ export default function Home() {
       />
 
       <Welcome />
-      
-      <Location/>
 
-      <CountDown/>
-     
-      <RegisterDialog />
+      <Location />
+
+      <CountDown />
+
+      <Registration />
+
     </div>
   );
 }

@@ -25,12 +25,6 @@ export default function LanguageSwitcher() {
     router.push(`/${newLocale}/${path}`);
   };
 
-  const languages = [
-    { code: "en", name: t("localeSwitcher.english") },
-    { code: "de", name: t("localeSwitcher.german") },
-    { code: "es", name: t("localeSwitcher.spanish") },
-  ];
-
   return (
     <Select defaultValue={locale} onValueChange={switchLocale}>
       <SelectTrigger className="w-[180px] text-black mt-[1rem] ml-[1rem]">

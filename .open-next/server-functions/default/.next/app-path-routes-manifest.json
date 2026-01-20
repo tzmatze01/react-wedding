@@ -1,0 +1,11 @@
+{
+  "/api/login/route": "/api/login",
+  "/api/wedding/route": "/api/wedding",
+  "/api/overview/route": "/api/overview",
+  "/_not-found/page": "/_not-found",
+  "/[locale]/[...not_found]/page": "/[locale]/[...not_found]",
+  "/[locale]/home/page": "/[locale]/home",
+  "/[locale]/login/page": "/[locale]/login",
+  "/[locale]/page": "/[locale]",
+  "/[locale]/overview/page": "/[locale]/overview"
+}

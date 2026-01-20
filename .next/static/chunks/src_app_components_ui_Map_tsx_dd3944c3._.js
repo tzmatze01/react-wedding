@@ -24,7 +24,7 @@ var _s = __turbopack_context__.k.signature();
 ;
 function WeddingMap(props) {
     _s();
-    const { position, zoom, height } = props;
+    const { position, zoom } = props;
     const popupRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "WeddingMap.useEffect": ()=>{
@@ -49,10 +49,9 @@ function WeddingMap(props) {
         center: position,
         zoom: zoom,
         scrollWheelZoom: false,
-        className: "",
         style: {
-            height: '100%',
-            width: '100%'
+            height: "100%",
+            width: "100%"
         },
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$leaflet$2f$lib$2f$TileLayer$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TileLayer"], {
@@ -60,7 +59,7 @@ function WeddingMap(props) {
                 url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             }, void 0, false, {
                 fileName: "[project]/src/app/components/ui/Map.tsx",
-                lineNumber: 41,
+                lineNumber: 39,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$leaflet$2f$lib$2f$Marker$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Marker"], {
@@ -72,40 +71,41 @@ function WeddingMap(props) {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$leaflet$2f$lib$2f$Popup$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Popup"], {
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                         href: "https://maps.app.goo.gl/sB5wKwY2zz1sWhqV8",
+                        className: "text-[0.4rem] md:text-[1rem]",
                         children: [
                             "RP26 900 ",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                 fileName: "[project]/src/app/components/ui/Map.tsx",
-                                lineNumber: 54,
-                                columnNumber: 20
+                                lineNumber: 55,
+                                columnNumber: 22
                             }, this),
                             "B1623 Ingeniero Maschwitz ",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                 fileName: "[project]/src/app/components/ui/Map.tsx",
-                                lineNumber: 55,
-                                columnNumber: 37
+                                lineNumber: 56,
+                                columnNumber: 39
                             }, this),
                             "Provincia de Buenos Aires, Argentinien"
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/components/ui/Map.tsx",
-                        lineNumber: 53,
+                        lineNumber: 51,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/ui/Map.tsx",
-                    lineNumber: 52,
+                    lineNumber: 50,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/components/ui/Map.tsx",
-                lineNumber: 45,
+                lineNumber: 43,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/components/ui/Map.tsx",
-        lineNumber: 34,
+        lineNumber: 33,
         columnNumber: 5
     }, this);
 }

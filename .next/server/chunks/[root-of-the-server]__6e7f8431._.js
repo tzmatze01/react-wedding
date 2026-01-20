@@ -55,20 +55,22 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$externals$5d2f$crypto__$5b$external$5d$__$28$crypto$2c$__cjs$29$__ = __turbopack_context__.i("[externals]/crypto [external] (crypto, cjs)");
 ;
+const secret_iv = process.env.SECRET_IV;
+const secret_key = process.env.SECRET_KEY;
 // Replace with your own key and iv
 // You can generate them with crypto.randomBytes(32) and crypto.randomBytes(16)
-const key = Buffer.from('17204a84b538359abe8ba74807efa12a068c20a7c7f224b35198acf832cea57b', 'hex');
-const iv = Buffer.from('da1cdcd9fe4199c835bd5f1d56446aff', 'hex');
-const algorithm = 'aes-256-cbc';
+const key = Buffer.from(secret_key, "hex");
+const iv = Buffer.from(secret_iv, "hex");
+const algorithm = "aes-256-cbc";
 const encrypt = (text)=>{
     const cipher = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$crypto__$5b$external$5d$__$28$crypto$2c$__cjs$29$__["createCipheriv"])(algorithm, key, iv);
-    const encrypted = cipher.update(text, 'utf8', 'base64');
-    return `${encrypted}${cipher.final('base64')}`;
+    const encrypted = cipher.update(text, "utf8", "base64");
+    return `${encrypted}${cipher.final("base64")}`;
 };
 const decrypt = (encrypted)=>{
     const decipher = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$crypto__$5b$external$5d$__$28$crypto$2c$__cjs$29$__["createDecipheriv"])(algorithm, key, iv);
-    const decrypted = decipher.update(encrypted, 'base64', 'utf8');
-    return `${decrypted}${decipher.final('utf8')}`;
+    const decrypted = decipher.update(encrypted, "base64", "utf8");
+    return `${decrypted}${decipher.final("utf8")}`;
 };
 }),
 "[project]/src/app/api/login/route.ts [app-route] (ecmascript)", ((__turbopack_context__) => {
@@ -84,18 +86,17 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$api$2f$login$2
 ;
 async function POST(request) {
     const password = process.env.INVITE_PASSWORD;
+    const admin_password = process.env.ADMIN_PASSWORD;
     const body = await request.json();
     console.log("sessionData: " + body);
-    if (process.env.INVITE_PASSWORD === body["password"]) {
+    if (password === body["password"] || admin_password === body["password"]) {
         const encryptedSessionData = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$api$2f$login$2f$encrypt$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["encrypt"])(body["password"]);
         const cookie = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$cookie$2f$dist$2f$index$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["serialize"])("session", encryptedSessionData, {
             httpOnly: true,
             secure: ("TURBOPACK compile-time value", "development") === "production",
-            maxAge: 60 * 60 * 24 * 7,
+            maxAge: 60 * 60 * 24 * 7 * 8,
             path: "/"
         });
-        //res.setHeader("Set-Cookie", cookie);
-        //res.status(200).json({ message: "Successfully set cookie!" });
         return new Response("Log in", {
             status: 200,
             headers: {

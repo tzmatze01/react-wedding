@@ -83,10 +83,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$use$2d$intl$
 ;
 const __TURBOPACK__default__export__ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$server$2f$react$2d$server$2f$getRequestConfig$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__getRequestConfig$3e$__["getRequestConfig"])(async ({ requestLocale })=>{
     const requested = await requestLocale;
-    console.log("reqeusted: " + requested);
     const locale = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$use$2d$intl$2f$dist$2f$esm$2f$development$2f$core$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$locals$3e$__["hasLocale"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["locales"], requested) ? requested : "en";
-    //if(!locales.includes(locale as any)) notFound();
-    console.log("lcoale identified: " + locale);
     return {
         locale,
         messages: (await __turbopack_context__.f({

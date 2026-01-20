@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 import SplitText from "@/components/ui/SplitText";
+import Image from "next/image";
 
 export default function Home() {
   const texts = [
-    <SplitText text="Welcome" />,
-    <SplitText text="Willkommen" />,
-    <SplitText text="Bienvenidx" />,
+    <SplitText key="welcome" text="Welcome" />,
+    <SplitText key="willkommen" text="Willkommen" />,
+    <SplitText key="bienvenido" text="Bienvenidx" />,
   ];
   const [index, setIndex] = useState(0);
   const words = ["Welcome", "Willkommen", "Bienvenidx"];
@@ -19,10 +20,10 @@ export default function Home() {
     }, 2000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [texts.length]);
 
   return (
-    <div className="card lg:w-[70vw] lg:h-[70vh] sm:w-[90vw] sm:h-[50vw]">
+    <div className="card w-[90vw] h-[70vw] lg:w-[70vw] lg:h-[70vh]">
       <img
         src="/border.webp"
         style={{
@@ -59,12 +60,13 @@ export default function Home() {
         className="cardBorder"
       />
       <div className="flex flex-col flex-center items-center justify-center h-full">
-        <img src="/emprezel.webp" alt="Wedding Logo" className="lg:w-[18rem] sm:w-[10rem]" />
-
+        <div className="w-[6rem] h-[6rem] md:w-[12rem] md:h-[12rem] lg:w-[18rem] lg:h-[18rem]">
+          <Image src="/emprezel.webp" alt="Wedding Logo" width={500} height={500}  />
+        </div>
         <SplitText
           key={words[index]}
           text={words[index]}
-          className="lg:text-[5rem] sm:text-[3rem]"
+          className="text-[2rem] md:text-[4rem] lg:text-[5rem]"
           delay={100}
           duration={0.6}
           ease="power3.out"

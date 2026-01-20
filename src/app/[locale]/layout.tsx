@@ -4,6 +4,7 @@ import "../globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import LanguageSwitcher from "@/components/ui/LanguageSwitcher";
+import { Toaster } from "@/components/ui/sonner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,40 +23,41 @@ export const metadata: Metadata = {
 
 interface LocaleLayoutProps {
   children: React.ReactNode;
-  params: Promise<{locale: string}>
+  params: Promise<{ locale: string }>;
 }
 
-export default async function RootLayout({
-  children,
-  params,
-}: LocaleLayoutProps) {
+export default async function RootLayout({ children, params }: LocaleLayoutProps) {
   const { locale } = await params;
-  
+
   setRequestLocale(locale);
 
   // Providing all messages to the client
   // side is the easiest way to get started
   const messages = await getMessages();
-  
+
   return (
     <html lang={locale}>
       <head>
         <link rel="icon" href="/emprezel.webp" type="image/svg+xml"></link>
       </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <NextIntlClientProvider messages={messages}>
           <header>
-            <LanguageSwitcher/>
-              
+            <LanguageSwitcher />
           </header>
           {children}
 
+          <Toaster
+            className="text-black flex align-center justify-center"
+            position="bottom-center"
+            toastOptions={{
+              style: {
+                background: "white",
+              },
+            }}
+          />
           <footer className="footer">
-            <p className="paragraph">
-              &copy; {new Date().getFullYear()} All rights reserved.
-            </p>
+            <p className="paragraph">&copy; {new Date().getFullYear()} All rights reserved.</p>
           </footer>
         </NextIntlClientProvider>
       </body>
