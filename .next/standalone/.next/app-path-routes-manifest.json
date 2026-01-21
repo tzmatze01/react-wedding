@@ -1,11 +1,12 @@
 {
   "/api/login/route": "/api/login",
-  "/api/wedding/route": "/api/wedding",
-  "/api/overview/route": "/api/overview",
   "/_not-found/page": "/_not-found",
+  "/api/overview/route": "/api/overview",
+  "/api/wedding/route": "/api/wedding",
   "/[locale]/[...not_found]/page": "/[locale]/[...not_found]",
   "/[locale]/home/page": "/[locale]/home",
   "/[locale]/login/page": "/[locale]/login",
   "/[locale]/page": "/[locale]",
+  "/[locale]/unauthorized/page": "/[locale]/unauthorized",
   "/[locale]/overview/page": "/[locale]/overview"
 }

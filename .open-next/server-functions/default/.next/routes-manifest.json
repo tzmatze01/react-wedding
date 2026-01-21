@@ -52,6 +52,14 @@
       "namedRegex": "^/(?<nxtPlocale>[^/]+?)/overview(?:/)?$"
     },
     {
+      "page": "/[locale]/unauthorized",
+      "regex": "^/([^/]+?)/unauthorized(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/unauthorized(?:/)?$"
+    },
+    {
       "page": "/[locale]/[...not_found]",
       "regex": "^/([^/]+?)/(.+?)(?:/)?$",
       "routeKeys": {

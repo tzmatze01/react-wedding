@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///home/matze/Repositories/react-wedding/src/app/%5Blocale%5D/page.tsx"],"sourcesContent":["\"use client\";\n\nimport { useLocale } from \"next-intl\";\nimport { redirect, RedirectType } from \"next/navigation\";\n\nexport default function Login() {\n  const locale = useLocale();\n\n  redirect(`/${locale}/home`, RedirectType.replace);\n\n  return (\n    <div className=\"font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20\">\n      <main className=\"flex flex-col gap-[32px] row-start-2 items-center sm:items-senter\"></main>\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;;AAEA;AACA;;;AAHA;;;AAKe,SAAS;;IACtB,MAAM,SAAS,IAAA,kLAAS;IAExB,IAAA,iJAAQ,EAAC,AAAC,IAAU,OAAP,QAAO,UAAQ,qJAAY,CAAC,OAAO;IAEhD,qBACE,6LAAC;QAAI,WAAU;kBACb,cAAA,6LAAC;YAAK,WAAU;;;;;;;;;;;AAGtB;GAVwB;;QACP,kLAAS;;;KADF","debugId":null}}]
-}
