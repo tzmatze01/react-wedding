@@ -3,42 +3,43 @@
   "middleware": {
     "/": {
       "files": [
-        "server/edge-runtime-webpack.js",
-        "server/src/middleware.js"
+        "server/edge/chunks/_29e7262f._.js",
+        "server/edge/chunks/[root-of-the-server]__fe8b91df._.js",
+        "server/edge/chunks/turbopack-edge-wrapper_01f9aeed.js"
       ],
-      "name": "src/middleware",
+      "name": "middleware",
       "page": "/",
       "matchers": [
         {
-          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?(?:\\/(\\/?index|\\/?index\\.json))?[\\/#\\?]?$",
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?(?:\\/(\\/?index|\\/?index\\\\.json))?[\\/#\\?]?$",
           "originalSource": "/"
         },
         {
-          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?(?:\\/(en|de|es))\\/login(\\.json)?[\\/#\\?]?$",
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?(?:\\/(en|de|es))\\/login(\\\\.json)?[\\/#\\?]?$",
           "originalSource": "/(en|de|es)/login"
         },
         {
-          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?(?:\\/(en|de|es))\\/home(?:\\/((?:[^\\/#\\?]+?)(?:\\/(?:[^\\/#\\?]+?))*))?(\\.json)?[\\/#\\?]?$",
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?(?:\\/(en|de|es))\\/home(?:\\/((?:[^\\/#\\?]+?)(?:\\/(?:[^\\/#\\?]+?))*))?(\\\\.json)?[\\/#\\?]?$",
           "originalSource": "/(en|de|es)/home/:path*"
         },
         {
-          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?(?:\\/(en|de|es))\\/overview(?:\\/((?:[^\\/#\\?]+?)(?:\\/(?:[^\\/#\\?]+?))*))?(\\.json)?[\\/#\\?]?$",
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?(?:\\/(en|de|es))\\/overview(?:\\/((?:[^\\/#\\?]+?)(?:\\/(?:[^\\/#\\?]+?))*))?(\\\\.json)?[\\/#\\?]?$",
           "originalSource": "/(en|de|es)/overview/:path*"
         }
       ],
       "wasm": [],
       "assets": [],
       "env": {
-        "__NEXT_BUILD_ID": "B9nyMTO8G42sDyMHQ2bm_",
+        "__NEXT_BUILD_ID": "development",
         "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "ih1tXuIJX7BkOcKJA19atyZdLshZOR3x3rNwB8Zs/S0=",
-        "__NEXT_PREVIEW_MODE_ID": "8760d7975846feba5fe823717b051376",
-        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "bb7e69c68c9f3668fc772e9598d408bddab5404c9c87a5a8291e66fb5791f90e",
-        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "a4b645cd7a0ab52c9d54b3718912683ad23e109f400d5b1dfa4362c949152f92"
+        "__NEXT_PREVIEW_MODE_ID": "f295e023418e03a354e2a90b145beffc",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "2fb2a89d9c2245237c0635f4acf6cb48e8fb56c79883497938ee6fbc6d968c91",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "b85f801a5d6c15040cb3e1811dfec1f3439ec0d13bd60ca911cf43d904990047"
       }
     }
   },
-  "functions": {},
   "sortedMiddleware": [
     "/"
-  ]
+  ],
+  "functions": {}
 }

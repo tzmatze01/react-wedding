@@ -9,7 +9,6 @@ type ColorSwipeProps = {
 };
 
 export default function ColorSwipe(props: ColorSwipeProps) {
-
   return (
     <img
       src={props.image}
@@ -18,7 +17,7 @@ export default function ColorSwipe(props: ColorSwipeProps) {
         position: "fixed",
         width: "100vw",
         height: "40vh",
-        animationDelay: props.delay ?? '0',
+        animationDelay: props.delay ?? "0",
         opacity: "0",
         right: props.right,
         top: props.top,

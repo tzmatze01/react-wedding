@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 15, "column": 0}, "map": {"version":3,"sources":["file:///home/matze/Repositories/react-wedding/src/app/%5Blocale%5D/%5B...not_found%5D/page.ts"],"sourcesContent":["import {notFound} from \"next/navigation\"\n\nexport default function NotFoundCatchAll() {\n  notFound()\n}"],"names":[],"mappings":";;;;AAAA;AAAA;;AAEe,SAAS;IACtB,IAAA,iMAAQ;AACV","debugId":null}}]
+}
