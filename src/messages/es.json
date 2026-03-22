@@ -1,44 +1,44 @@
 {
   "Login": {
     "hello": "Hallo",
-    "login": "Entrar",
-    "loading": "Algo con mas tiempo...",
-    "error": "Mala clave"
+    "login": "Acceder",
+    "loading": "Cargando...",
+    "error": "Contraseña incorrecta"
   },
   "CountDown": {
     "welcome": "Bienvenidx",
-    "see_you": "Hasta en",
-    "days": "dias"
+    "see_you": "Nos vemos en",
+    "days": "diás"
   },
   "Location": {
-    "when": "Cuando",
-    "date": "Sabado, 21 Noviembre 2026",
-    "where": "Donde",
+    "when": "Cuándo",
+    "date": "Sábado, 21 de noviembre de 2026",
+    "where": "Dónde",
     "location": "Espacio Campus",
     "city": "Buenos Aires, Argentina"
   },
   "Registration": {
-    "title": "Registracion",
-    "description": "Espanol este -> Estamos muzy felices a ,, nuestro boda. If you want to change your details later on, you can fill out the form again with the same email."
+    "title": "Registrarse",
+    "description": "Estamos muy contentos de invitarte a nuestra boda. Si más tarde querés cambiar los datos ingresados, podés volver a rellenar el formulario con la misma dirección de e-mail."
   },
   "Dialog": {
-    "open": "Registrar",
-    "title": "Registracion",
-    "description": "Bla",
+    "open": "Registrarse",
+    "title": "Registrarse",
+    "description": "Para que podamos calcular bien el número de invitados, no te olvides de registrar a tu pareja con otro mail.",
     "name": "Nombre",
-    "surname": "Apedillo",
+    "surname": "Apellido",
     "email": "Email",
     "coming": "Voy a la boda",
     "comment": "Tienes prgeuntas. allergias or otras notas?",
     "cancel": "Cancelar",
-    "register_positive": "🎉Estamos felices verte en la boda 🎉",
+    "register_positive": "🎉 Estamos felices verte en la boda 🎉",
     "register_negative": "Que pena no veni"
   },
   "components": {
     "localeSwitcher": {
-      "english": "Ingles",
-      "german": "Aleman",
-      "spanish": "Espanol"
+      "english": "Inglés",
+      "german": "Alemán",
+      "spanish": "Argentino"
     }
   }
 }

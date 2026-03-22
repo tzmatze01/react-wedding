@@ -19,19 +19,19 @@
   },
   "Registration": {
     "title": "Registration",
-    "description": "We are very happy to welcome you at our Wedding. If you want to change your details later on, you can fill out the form again with the same email."
+    "description": "If you're reading this it means we we would love to have you at our wedding. Maybe click the button to help us create a list of attending guests."
   },
   "Dialog": {
     "open": "Register",
     "title": "Registration",
-    "description": "Bla",
+    "description": "To have an accurate list of guests, please make sure to make an additional registration for your partner, with a seperate email.",
     "name": "Name",
     "surname": "Surname",
     "email": "Email",
     "coming": "I'm coming to the wedding",
     "comment": "Do you have questions, allergies or other notes?",
     "cancel": "Cancel",
-    "register_positive": "🎉We are lookig forward to see you at the wedding 🎉",
+    "register_positive": "🎉 We are lookig forward to see you at the wedding 🎉",
     "register_negative": "Sad that you can't make it"
   },
   "components": {

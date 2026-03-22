@@ -19,19 +19,19 @@
   },
   "Registration": {
     "title": "Ameldung",
-    "description": "Wir freuen uns sehr, dass Ihr zu unserer Hochyeit kommt. Falls Ihr eure Infos später nochmal ändern wollt, füllt das Formular nochmals mit der selben Email aus."
+    "description": "Wenn du das hier liest, bedeutet das, dass wir uns sehr freuen würden, dich auf auf unserer Hochzeit zu haben. Klick auf den Button um uns dabei zu helfen eine Liste aller teilnehmenden Gäste zu erstellen."
   },
   "Dialog": {
     "open": "Anmelden",
     "title": "Ameldung",
-    "description": "Bla",
+    "description": "Um eine genaue Liste aller Gäste zu haben, denk bitte daran, die Registrierung deines Partners mit eomer seperaten Email Adresse zu machen.",
     "name": "Name",
     "surname": "Nachname",
     "email": "Email",
     "coming": "Ich komme zur Hochzeit",
     "comment": "Hast du Fragen, Allergien oder sonstige Anmerkungen?",
     "cancel": "Abbrechen",
-    "register_positive": "🎉Wir freuen uns dich bei Hochzeit zu sehen 🎉",
+    "register_positive": "🎉 Wir freuen uns dich bei Hochzeit zu sehen 🎉",
     "register_negative": "Schade,dass du es nicht schaffst"
   },
   "components": {

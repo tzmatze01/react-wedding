@@ -11,7 +11,6 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { Field, FieldGroup, FieldLabel, FieldSet } from "@/components/ui/field";
-import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { useTranslations } from "next-intl";
@@ -35,10 +34,10 @@ export default function RegisterDialog() {
         surname: formData.get("surname"),
         email: formData.get("email"),
         questions: formData.get("questions"),
-        coming_buenos_aires: formData.get("coming") != null,
+        coming_buenos_aires: true,
       };
 
-      console.log("formdata: " + JSON.stringify(data, null, 2));
+      // console.log("formdata: " + JSON.stringify(data, null, 2));
       const response = await fetch("/api/wedding", {
         method: "POST",
         headers: {
@@ -50,11 +49,7 @@ export default function RegisterDialog() {
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       } else {
-        if (data.coming_buenos_aires) {
-          toast(t("register_positive"));
-        } else {
-          toast(t("register_negative"));
-        }
+        toast(t("register_positive"));
         setIsOpen(false);
       }
     } catch (error) {
@@ -94,13 +89,7 @@ export default function RegisterDialog() {
                   <FieldLabel htmlFor="guest-email">{t("email")}</FieldLabel>
                   <Input id="guest-email" name="email" type="email" required />
                 </Field>
-                <Field orientation="horizontal">
-                  <Checkbox id="guest-coming" defaultChecked name="coming" />
-                  <FieldLabel htmlFor="guest-coming" className="font-normal">
-                    {t("coming")}
-                  </FieldLabel>
-                </Field>
-                <Field className="mt-10">
+                <Field>
                   <FieldLabel htmlFor="guest-questions">{t("comment")}</FieldLabel>
                   <Textarea
                     id="guest-questions"
