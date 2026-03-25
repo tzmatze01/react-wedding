@@ -8,18 +8,18 @@
   "CountDown": {
     "welcome": "Bienvenidx",
     "see_you": "Nos vemos en",
-    "days": "diás"
+    "days": "días"
   },
   "Location": {
     "when": "Cuándo",
-    "date": "Sábado, 21 de noviembre de 2026",
+    "date": "Sábado 21 de noviembre 2026",
     "where": "Dónde",
     "location": "Espacio Campus",
     "city": "Buenos Aires, Argentina"
   },
   "Registration": {
-    "title": "Registrarse",
-    "description": "Estamos muy contentos de invitarte a nuestra boda. Si más tarde querés cambiar los datos ingresados, podés volver a rellenar el formulario con la misma dirección de e-mail."
+    "title": "Registrate",
+    "description": "Si estás leyendo esto es porque nos encantaría que estés en nuestra boda. Hacé clic en 'Registrarse' para ayudarnos a hacer una lista de invitados."
   },
   "Dialog": {
     "open": "Registrarse",
@@ -27,11 +27,12 @@
     "description": "Para que podamos calcular bien el número de invitados, no te olvides de registrar a tu pareja con otro mail.",
     "name": "Nombre",
     "surname": "Apellido",
-    "email": "Email",
+    "email": "E-mail",
     "coming": "Voy a la boda",
-    "comment": "Tienes prgeuntas. allergias or otras notas?",
+    "comment": "¿Tenés alguna pregunta, alergia o algo que nos quieras decir?",
+    "placeholder": "Escribí acá",
     "cancel": "Cancelar",
-    "register_positive": "🎉 Estamos felices verte en la boda 🎉",
+    "register_positive": "🎉 Estamos ansiosos de celebrar con vos 🎉",
     "register_negative": "Que pena no veni"
   },
   "components": {

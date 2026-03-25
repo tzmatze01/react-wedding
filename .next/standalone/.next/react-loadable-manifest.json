@@ -1,0 +1,10 @@
+{
+  "app/components/Location.tsx -> @/components/ui/Map": {
+    "id": 255,
+    "files": [
+      "static/css/1de76be520b4de19.css",
+      "static/chunks/d0deef33.72998ae80855712a.js",
+      "static/chunks/493.72f1f7e2d2b65779.js"
+    ]
+  }
+}

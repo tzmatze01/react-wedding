@@ -94,7 +94,7 @@ export default function RegisterDialog() {
                   <Textarea
                     id="guest-questions"
                     name="questions"
-                    placeholder="Add any additional comments"
+                    placeholder={t("placeholder")}
                     className="resize-none"
                   />
                 </Field>

@@ -12,26 +12,27 @@
   },
   "Location": {
     "when": "When",
-    "date": "Saturday, 21 November 2026",
+    "date": "Saturday, 21st November 2026",
     "where": "Where",
     "location": "Espacio Campus",
-    "city": "Buenos Aires, Argentinia"
+    "city": "Buenos Aires, Argentina"
   },
   "Registration": {
     "title": "Registration",
-    "description": "If you're reading this it means we we would love to have you at our wedding. Maybe click the button to help us create a list of attending guests."
+    "description": "If you're reading this it means we would love to have you at our wedding. Click the button to help us create a list of attending guests."
   },
   "Dialog": {
     "open": "Register",
     "title": "Registration",
-    "description": "To have an accurate list of guests, please make sure to make an additional registration for your partner, with a seperate email.",
+    "description": "To have an accurate number of guests, please make sure to make an additional registration for your partner, with a seperate email.",
     "name": "Name",
     "surname": "Surname",
-    "email": "Email",
+    "email": "E-mail",
     "coming": "I'm coming to the wedding",
     "comment": "Do you have questions, allergies or other notes?",
     "cancel": "Cancel",
-    "register_positive": "🎉 We are lookig forward to see you at the wedding 🎉",
+    "placeholder": "Write here",
+    "register_positive": "🎉 We are lookig forward to seeing you at the wedding 🎉",
     "register_negative": "Sad that you can't make it"
   },
   "components": {
