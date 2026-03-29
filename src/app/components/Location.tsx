@@ -26,7 +26,7 @@ export default function Location() {
       </div>
 
       <div className="h-60 col-span-2 lg:col-span-1 lg:row-span-2 w-full lg:h-full mt-4 lg:mt-0 lg:order-1">
-        <Map position={[-34.374077, -58.72908]} zoom={13} />
+        <Map position={[-34.390232, -58.6760043]} zoom={13} />
       </div>
     </div>
   );

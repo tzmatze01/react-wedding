@@ -21,7 +21,7 @@ export default function LanguageSwitcher() {
 
   const switchLocale = (newLocale: string) => {
     const path = pathname.split("/").at(-1);
-    console.log(`/${newLocale}/${path}`);
+    // console.log(`/${newLocale}/${path}`);
     router.push(`/${newLocale}/${path}`);
   };
 

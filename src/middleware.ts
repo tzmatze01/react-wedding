@@ -39,7 +39,7 @@ export async function middleware(request: NextRequest) {
   }
 
   const sessionData = await getSessionData(sessionCookie.value);
-
+  console.log("sessionData ", JSON.stringify(sessionData, null, 2));
   if (!sessionData) {
     // Invalid session
     console.log("invalid session");

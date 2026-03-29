@@ -6,6 +6,9 @@ export async function POST(request: Request) {
   const admin_password = process.env.ADMIN_PASSWORD;
 
   const body: LoginBody = await request.json();
+  console.log("body: ", JSON.stringify(body));
+  console.log("body pw: ", JSON.stringify(password));
+  console.log("body padmin: ", JSON.stringify(admin_password));
   if (password === body["password"] || admin_password === body["password"]) {
     const cookie = await createSessionCookie({
       roles: admin_password === body["password"] ? ["admin", "user"] : ["user"],

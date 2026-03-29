@@ -15,7 +15,8 @@
     "date": "Saturday, 21st November 2026",
     "where": "Where",
     "location": "Espacio Campus",
-    "city": "Buenos Aires, Argentina"
+    "city": "Buenos Aires, Argentina",
+    "adress": "Provincia de Buenos Aires, Argentina"
   },
   "Registration": {
     "title": "Registration",
@@ -24,7 +25,7 @@
   "Dialog": {
     "open": "Register",
     "title": "Registration",
-    "description": "To have an accurate number of guests, please make sure to make an additional registration for your partner, with a seperate email.",
+    "description": "To have an accurate number of guests, please make sure to register your partner with a different email.",
     "name": "Name",
     "surname": "Surname",
     "email": "E-mail",
@@ -39,7 +40,7 @@
     "localeSwitcher": {
       "english": "English",
       "german": "German",
-      "spanish": "Spanish"
+      "spanish": "Argentinian"
     }
   }
 }

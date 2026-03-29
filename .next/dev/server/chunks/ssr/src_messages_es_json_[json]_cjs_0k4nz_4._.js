@@ -1,0 +1,53 @@
+module.exports = [
+"[project]/src/messages/es.json.[json].cjs [app-rsc] (ecmascript)", ((__turbopack_context__, module, exports) => {
+
+module.exports = {
+    "Login": {
+        "hello": "Hallo",
+        "login": "Acceder",
+        "loading": "Cargando...",
+        "error": "Contraseña incorrecta"
+    },
+    "CountDown": {
+        "welcome": "Bienvenidx",
+        "see_you": "Nos vemos en",
+        "days": "días"
+    },
+    "Location": {
+        "when": "Cuándo",
+        "date": "Sábado 21 de noviembre 2026",
+        "where": "Dónde",
+        "location": "Espacio Campus",
+        "city": "Buenos Aires, Argentina",
+        "adress": "Provincia de Buenos Aires, Argentinia"
+    },
+    "Registration": {
+        "title": "Registrate",
+        "description": "Si estás leyendo esto es porque nos encantaría que estés en nuestra boda. Hacé clic en 'Registrarse' para ayudarnos a hacer una lista de invitados."
+    },
+    "Dialog": {
+        "open": "Registrarse",
+        "title": "Registrarse",
+        "description": "Para que podamos calcular bien el número de invitados, no te olvides de registrar a tu pareja con otro mail.",
+        "name": "Nombre",
+        "surname": "Apellido",
+        "email": "E-mail",
+        "coming": "Voy a la boda",
+        "comment": "¿Tenés alguna pregunta, alergia o algo que nos quieras decir?",
+        "placeholder": "Escribí acá",
+        "cancel": "Cancelar",
+        "register_positive": "🎉 Estamos ansiosos de celebrar con vos 🎉",
+        "register_negative": "Que pena no veni"
+    },
+    "components": {
+        "localeSwitcher": {
+            "english": "Inglés",
+            "german": "Alemán",
+            "spanish": "Argentino"
+        }
+    }
+};
+}),
+];
+
+//# sourceMappingURL=src_messages_es_json_%5Bjson%5D_cjs_0k4nz_4._.js.map

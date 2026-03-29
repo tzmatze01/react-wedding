@@ -15,7 +15,8 @@
     "date": "Samstag, 21. November 2026",
     "where": "Wo",
     "location": "Espacio Campus",
-    "city": "Buenos Aires, Argentinien"
+    "city": "Buenos Aires, Argentinien",
+    "adress": "Provincia de Buenos Aires, Argentinien"
   },
   "Registration": {
     "title": "Anmeldung",
@@ -39,7 +40,7 @@
     "localeSwitcher": {
       "english": "Englisch",
       "german": "Deutsch",
-      "spanish": "Spanisch"
+      "spanish": "Argentinisch"
     }
   }
 }

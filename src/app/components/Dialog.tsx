@@ -104,9 +104,11 @@ export default function RegisterDialog() {
 
           <DialogFooter className="self-end">
             <DialogClose asChild>
-              <Button variant="outline">{t("cancel")}</Button>
+              <Button>{t("cancel")}</Button>
             </DialogClose>
-            <Button type="submit">{t("open")}</Button>
+            <Button variant="outline" type="submit">
+              {t("open")}
+            </Button>
           </DialogFooter>
         </form>
       </DialogContent>

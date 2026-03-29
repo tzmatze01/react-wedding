@@ -1,0 +1,53 @@
+module.exports = [
+"[project]/src/messages/de.json.[json].cjs [app-rsc] (ecmascript)", ((__turbopack_context__, module, exports) => {
+
+module.exports = {
+    "Login": {
+        "hello": "Hallo",
+        "login": "Einloggen",
+        "loading": "Laden...",
+        "error": "Falsches Passwort"
+    },
+    "CountDown": {
+        "welcome": "Willkommen",
+        "see_you": "Bis in",
+        "days": "Tagen"
+    },
+    "Location": {
+        "when": "Wann",
+        "date": "Samstag, 21. November 2026",
+        "where": "Wo",
+        "location": "Espacio Campus",
+        "city": "Buenos Aires, Argentinien",
+        "adress": "Provincia de Buenos Aires, Argentinien"
+    },
+    "Registration": {
+        "title": "Anmeldung",
+        "description": "Wenn du das hier liest, bedeutet das, dass wir uns sehr freuen würden, dich auf auf unserer Hochzeit zu haben. Klick auf den Button um uns dabei zu helfen eine Liste aller teilnehmenden Gäste zu erstellen."
+    },
+    "Dialog": {
+        "open": "Anmelden",
+        "title": "Anmeldung",
+        "description": "Um eine genaue Zahl aller Gäste zu haben, denk bitte daran, die Registrierung deines Partners mit einer seperaten E-mail Adresse zu machen.",
+        "name": "Name",
+        "surname": "Nachname",
+        "email": "E-mail",
+        "coming": "Ich komme zur Hochzeit",
+        "comment": "Hast du Fragen, Allergien oder sonstige Anmerkungen?",
+        "cancel": "Abbrechen",
+        "placeholder": "Schreib hier",
+        "register_positive": "🎉 Wir freuen uns, dich bei unserer Hochzeit zu sehen 🎉",
+        "register_negative": "Schade,dass du es nicht schaffst"
+    },
+    "components": {
+        "localeSwitcher": {
+            "english": "Englisch",
+            "german": "Deutsch",
+            "spanish": "Argentinisch"
+        }
+    }
+};
+}),
+];
+
+//# sourceMappingURL=src_messages_de_json_%5Bjson%5D_cjs_0fscr4m._.js.map

@@ -1,0 +1,53 @@
+module.exports = [
+"[project]/src/messages/en.json.[json].cjs [app-rsc] (ecmascript)", ((__turbopack_context__, module, exports) => {
+
+module.exports = {
+    "Login": {
+        "hello": "Hallo",
+        "login": "Login",
+        "loading": "Loading...",
+        "error": "Wrong password"
+    },
+    "CountDown": {
+        "welcome": "Welcome",
+        "see_you": "See you in",
+        "days": "days"
+    },
+    "Location": {
+        "when": "When",
+        "date": "Saturday, 21st November 2026",
+        "where": "Where",
+        "location": "Espacio Campus",
+        "city": "Buenos Aires, Argentina",
+        "adress": "Provincia de Buenos Aires, Argentina"
+    },
+    "Registration": {
+        "title": "Registration",
+        "description": "If you're reading this it means we would love to have you at our wedding. Click the button to help us create a list of attending guests."
+    },
+    "Dialog": {
+        "open": "Register",
+        "title": "Registration",
+        "description": "To have an accurate number of guests, please make sure to register your partner with a different email.",
+        "name": "Name",
+        "surname": "Surname",
+        "email": "E-mail",
+        "coming": "I'm coming to the wedding",
+        "comment": "Do you have questions, allergies or other notes?",
+        "cancel": "Cancel",
+        "placeholder": "Write here",
+        "register_positive": "🎉 We are lookig forward to seeing you at the wedding 🎉",
+        "register_negative": "Sad that you can't make it"
+    },
+    "components": {
+        "localeSwitcher": {
+            "english": "English",
+            "german": "German",
+            "spanish": "Argentinian"
+        }
+    }
+};
+}),
+];
+
+//# sourceMappingURL=src_messages_en_json_%5Bjson%5D_cjs_0_vua92._.js.map

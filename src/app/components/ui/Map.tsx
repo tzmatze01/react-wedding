@@ -6,6 +6,7 @@ import "leaflet/dist/leaflet.css";
 import { LatLngTuple } from "leaflet";
 import "leaflet-defaulticon-compatibility";
 import { useEffect, useRef } from "react";
+import { useTranslations } from "next-intl";
 
 interface MapProps {
   position: LatLngTuple;
@@ -13,6 +14,8 @@ interface MapProps {
 }
 
 export default function WeddingMap(props: MapProps) {
+  const t = useTranslations("Location");
+
   const { position, zoom } = props;
   const popupRef = useRef<L.Popup | null>(null);
 
@@ -30,12 +33,7 @@ export default function WeddingMap(props: MapProps) {
   });
 
   return (
-    <MapContainer
-      center={position}
-      zoom={zoom}
-      scrollWheelZoom={false}
-      style={{ height: "100%", width: "100%" }}
-    >
+    <MapContainer center={position} zoom={zoom} scrollWheelZoom={false} style={{ height: "100%", width: "100%" }}>
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -48,13 +46,10 @@ export default function WeddingMap(props: MapProps) {
         icon={empanadaBrezel}
       >
         <Popup>
-          <a
-            href="https://maps.app.goo.gl/sB5wKwY2zz1sWhqV8"
-            className="text-[0.4rem] md:text-[1rem]"
-          >
-            RP26 900 <br />
-            B1623 Ingeniero Maschwitz <br />
-            Provincia de Buenos Aires, Argentinien
+          <a href="https://maps.app.goo.gl/VYXkK2r66PQPccVF8" className="text-[0.4rem] md:text-[1rem]">
+            Av. Italia 4208, B1621DZP <br />
+            Benavidez <br />
+            {t("adress")}
           </a>
         </Popup>
       </Marker>
