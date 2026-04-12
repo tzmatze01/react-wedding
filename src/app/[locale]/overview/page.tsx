@@ -52,7 +52,7 @@ export default function AttendeesTable() {
         setLoading(false);
       }
     };
-    fetchGuests();
+    //fetchGuests();
   }, []);
 
   const sortedGuests = [...guests].sort((a, b) => {

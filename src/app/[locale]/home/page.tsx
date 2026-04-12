@@ -5,10 +5,23 @@ import Welcome from "@/components/Welcome";
 import Location from "@/components/Location";
 import CountDown from "@/components/CountDown";
 import Registration from "@/components/Registration";
+import ComingSoon from "@/components/ComingSoon";
 import { useWindowSize } from "@/lib/hook";
+import Image from "next/image";
+import { toast } from "sonner";
+import { useEffect } from "react";
+import { useTranslations } from "next-intl";
 
 export default function Home() {
   const { width } = useWindowSize();
+  const t = useTranslations("ComingSoon");
+
+  useEffect(() => {
+    toast(t("more_information"), {
+      className: "text-center flex flex-col items-center",
+      duration: Infinity,
+    });
+  });
 
   return (
     <div className="app">

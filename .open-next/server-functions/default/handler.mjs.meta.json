@@ -3628,13 +3628,13 @@
       "imports": [],
       "format": "cjs"
     },
-    ".open-next/server-functions/default/.next/server/app/_global-error/page_client-reference-manifest.js": {
-      "bytes": 5924,
+    ".open-next/server-functions/default/.next/server/app/_not-found/page_client-reference-manifest.js": {
+      "bytes": 6174,
       "imports": [],
       "format": "cjs"
     },
-    ".open-next/server-functions/default/.next/server/app/_not-found/page_client-reference-manifest.js": {
-      "bytes": 6174,
+    ".open-next/server-functions/default/.next/server/app/_global-error/page_client-reference-manifest.js": {
+      "bytes": 5924,
       "imports": [],
       "format": "cjs"
     },
@@ -3707,14 +3707,14 @@
           "original": "../shared/lib/deep-freeze"
         },
         {
-          "path": ".open-next/server-functions/default/.next/server/app/_global-error/page_client-reference-manifest.js",
-          "kind": "require-call",
-          "original": "/home/matze/Repositories/react-wedding/.open-next/server-functions/default/.next/server/app/_global-error/page_client-reference-manifest.js"
-        },
-        {
           "path": ".open-next/server-functions/default/.next/server/app/_not-found/page_client-reference-manifest.js",
           "kind": "require-call",
           "original": "/home/matze/Repositories/react-wedding/.open-next/server-functions/default/.next/server/app/_not-found/page_client-reference-manifest.js"
+        },
+        {
+          "path": ".open-next/server-functions/default/.next/server/app/_global-error/page_client-reference-manifest.js",
+          "kind": "require-call",
+          "original": "/home/matze/Repositories/react-wedding/.open-next/server-functions/default/.next/server/app/_global-error/page_client-reference-manifest.js"
         },
         {
           "path": ".open-next/server-functions/default/.next/server/app/[locale]/page_client-reference-manifest.js",
@@ -4484,17 +4484,17 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/.next/server/chunks/ssr/src_messages_de_json_[json]_cjs_0fscr4m._.js": {
-      "bytes": 1307,
+      "bytes": 1368,
       "imports": [],
       "format": "cjs"
     },
     ".open-next/server-functions/default/.next/server/chunks/ssr/src_messages_en_json_[json]_cjs_0_vua92._.js": {
-      "bytes": 1185,
+      "bytes": 1246,
       "imports": [],
       "format": "cjs"
     },
     ".open-next/server-functions/default/.next/server/chunks/ssr/src_messages_es_json_[json]_cjs_0k4nz_4._.js": {
-      "bytes": 1214,
+      "bytes": 1278,
       "imports": [],
       "format": "cjs"
     },
@@ -4520,7 +4520,7 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/.next/server/chunks/ssr/_0eddpud._.js": {
-      "bytes": 261193,
+      "bytes": 261356,
       "imports": [],
       "format": "cjs"
     },
@@ -4584,7 +4584,7 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/.next/server/chunks/ssr/_0vmlvig._.js": {
-      "bytes": 8409,
+      "bytes": 7950,
       "imports": [],
       "format": "cjs"
     },
@@ -6702,11 +6702,6 @@
           "original": "/home/matze/Repositories/react-wedding/.open-next/server-functions/default/.next/server/app/[locale]/overview/page_client-reference-manifest.js"
         },
         {
-          "path": ".open-next/server-functions/default/.next/server/app/[locale]/login/page_client-reference-manifest.js",
-          "kind": "require-call",
-          "original": "/home/matze/Repositories/react-wedding/.open-next/server-functions/default/.next/server/app/[locale]/login/page_client-reference-manifest.js"
-        },
-        {
           "path": ".open-next/server-functions/default/.next/server/app/[locale]/home/page_client-reference-manifest.js",
           "kind": "require-call",
           "original": "/home/matze/Repositories/react-wedding/.open-next/server-functions/default/.next/server/app/[locale]/home/page_client-reference-manifest.js"
@@ -6715,6 +6710,11 @@
           "path": ".open-next/server-functions/default/.next/server/app/[locale]/[...not_found]/page_client-reference-manifest.js",
           "kind": "require-call",
           "original": "/home/matze/Repositories/react-wedding/.open-next/server-functions/default/.next/server/app/[locale]/[...not_found]/page_client-reference-manifest.js"
+        },
+        {
+          "path": ".open-next/server-functions/default/.next/server/app/[locale]/login/page_client-reference-manifest.js",
+          "kind": "require-call",
+          "original": "/home/matze/Repositories/react-wedding/.open-next/server-functions/default/.next/server/app/[locale]/login/page_client-reference-manifest.js"
         }
       ],
       "format": "cjs"
@@ -11101,11 +11101,11 @@
         ".open-next/server-functions/default/node_modules/next/dist/shared/lib/deep-freeze.js": {
           "bytesInOutput": 589
         },
-        ".open-next/server-functions/default/.next/server/app/_global-error/page_client-reference-manifest.js": {
-          "bytesInOutput": 5687
-        },
         ".open-next/server-functions/default/.next/server/app/_not-found/page_client-reference-manifest.js": {
-          "bytesInOutput": 5935
+          "bytesInOutput": 5934
+        },
+        ".open-next/server-functions/default/.next/server/app/_global-error/page_client-reference-manifest.js": {
+          "bytesInOutput": 5688
         },
         ".open-next/server-functions/default/.next/server/app/[locale]/page_client-reference-manifest.js": {
           "bytesInOutput": 12109
@@ -11294,13 +11294,13 @@
           "bytesInOutput": 588
         },
         ".open-next/server-functions/default/.next/server/chunks/ssr/src_messages_de_json_[json]_cjs_0fscr4m._.js": {
-          "bytesInOutput": 1451
+          "bytesInOutput": 1512
         },
         ".open-next/server-functions/default/.next/server/chunks/ssr/src_messages_en_json_[json]_cjs_0_vua92._.js": {
-          "bytesInOutput": 1323
+          "bytesInOutput": 1384
         },
         ".open-next/server-functions/default/.next/server/chunks/ssr/src_messages_es_json_[json]_cjs_0k4nz_4._.js": {
-          "bytesInOutput": 1384
+          "bytesInOutput": 1454
         },
         ".open-next/server-functions/default/.next/server/chunks/ssr/[root-of-the-server]__0k15d83._.js": {
           "bytesInOutput": 2249
@@ -11312,7 +11312,7 @@
           "bytesInOutput": 6005
         },
         ".open-next/server-functions/default/.next/server/chunks/ssr/_0eddpud._.js": {
-          "bytesInOutput": 300841
+          "bytesInOutput": 301009
         },
         ".open-next/server-functions/default/.next/server/chunks/ssr/_next-internal_server_app_[locale]_home_page_actions_0zvkha1.js": {
           "bytesInOutput": 277
@@ -11336,7 +11336,7 @@
           "bytesInOutput": 2266
         },
         ".open-next/server-functions/default/.next/server/chunks/ssr/_0vmlvig._.js": {
-          "bytesInOutput": 8761
+          "bytesInOutput": 8280
         },
         ".open-next/server-functions/default/.next/server/chunks/ssr/_next-internal_server_app_[locale]_overview_page_actions_0x7~lw..js": {
           "bytesInOutput": 284
@@ -12002,7 +12002,7 @@
           "bytesInOutput": 59435
         }
       },
-      "bytes": 6113416
+      "bytes": 6113295
     }
   }
 }

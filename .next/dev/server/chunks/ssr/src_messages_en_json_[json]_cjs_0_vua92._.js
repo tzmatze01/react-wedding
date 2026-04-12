@@ -39,6 +39,9 @@ module.exports = {
         "register_positive": "🎉 We are lookig forward to seeing you at the wedding 🎉",
         "register_negative": "Sad that you can't make it"
     },
+    "ComingSoon": {
+        "more_information": "More information coming soon"
+    },
     "components": {
         "localeSwitcher": {
             "english": "English",

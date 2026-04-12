@@ -39,6 +39,9 @@ module.exports = {
         "register_positive": "🎉 Estamos ansiosos de celebrar con vos 🎉",
         "register_negative": "Que pena no veni"
     },
+    "ComingSoon": {
+        "more_information": "Próximamente más información"
+    },
     "components": {
         "localeSwitcher": {
             "english": "Inglés",
