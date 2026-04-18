@@ -5,9 +5,7 @@ import Welcome from "@/components/Welcome";
 import Location from "@/components/Location";
 import CountDown from "@/components/CountDown";
 import Registration from "@/components/Registration";
-import ComingSoon from "@/components/ComingSoon";
 import { useWindowSize } from "@/lib/hook";
-import Image from "next/image";
 import { toast } from "sonner";
 import { useEffect } from "react";
 import { useTranslations } from "next-intl";
@@ -18,10 +16,12 @@ export default function Home() {
 
   useEffect(() => {
     toast(t("more_information"), {
+      id: "more-info-toast",
       className: "text-center flex flex-col items-center",
-      duration: Infinity,
+      duration: 10000,
+      position: "bottom-left",
     });
-  });
+  }, [t]);
 
   return (
     <div className="app">

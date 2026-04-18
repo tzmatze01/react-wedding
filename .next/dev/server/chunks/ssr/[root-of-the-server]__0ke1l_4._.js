@@ -269,12 +269,12 @@ async function RootLayout({ children, params }) {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/[locale]/layout.tsx",
-                                lineNumber: 60,
+                                lineNumber: 61,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/[locale]/layout.tsx",
-                            lineNumber: 59,
+                            lineNumber: 60,
                             columnNumber: 11
                         }, this)
                     ]

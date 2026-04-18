@@ -49,7 +49,11 @@ export default function RegisterDialog() {
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       } else {
-        toast(t("register_positive"));
+        toast(t("register_positive"), {
+          id: "registered-toast",
+          duration: 5000,
+          position: "bottom-right",
+        });
         setIsOpen(false);
       }
     } catch (error) {

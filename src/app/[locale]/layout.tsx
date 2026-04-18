@@ -45,8 +45,8 @@ export default async function RootLayout({ children, params }: LocaleLayoutProps
           <header>
             <LanguageSwitcher />
           </header>
-          {children}
 
+          {children}
           <Toaster
             className="text-black flex align-center justify-center"
             position="bottom-center"
@@ -56,6 +56,7 @@ export default async function RootLayout({ children, params }: LocaleLayoutProps
               },
             }}
           />
+
           <footer className="footer">
             <p className="paragraph">&copy; {new Date().getFullYear()} All rights reserved.</p>
           </footer>
